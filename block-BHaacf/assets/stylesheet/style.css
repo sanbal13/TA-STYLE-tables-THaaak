@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #7A7A7A;
+}
+/* Flex Properties */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.align-stretch {
+    align-items: stretch;
+}
+.column {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+.flex-50{
+    flex: 1 1 50%;
+}
+.flex-60 {
+    flex: 0 1 60%;
+}
+.flex-76 {
+    flex: 0 1 76%;
+}
+
+
+/* General */
+a {
+    text-decoration: none;
+}
+.padding {
+    padding: 120px 0;
+}
+.orange {
+    color:#ED563A;
+}
+.curve-lines {
+    margin: 16px;
+}
+.section-header-margin-bottom {
+    margin-bottom: 80px;
+}
+.section-header-text {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #ED563A;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.btn:hover {
+    background-color:#dd4e35;
+    color: #fff;
+}
+.btn-big {
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600px;
+    font-size: 20px;
+}
+.btn-schedule {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 20px;
+}
+/* Headings */
+.heading-hero-main {
+    font-size: 86px;
+    font-weight: 900;
+    color:white;
+    text-transform: uppercase;
+    margin: 16px 0;
+}
+.heading-hero-secondary {
+    font-size: 20px;
+    font-weight: 900;
+    color:white;
+    text-transform: uppercase;
+}
+.heading-section {
+    color: #232D38;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.heading-article-program {
+    color: #232D38;
+    font-size: 20px;
+    font-weight: 600;
+}
+.heading-section-big {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.heading-article-classes {
+    color: #232D38;
+    font-size: 24px;
+    font-weight: 700;
+}
+.heading-trainer {
+    color: #232D38;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    position: absolute;
+    max-width: 100%;
+    width:100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); 
+    z-index: 1;
+}
+header a {
+    color: #fff;
+}
+.header-nav a:hover{
+    color:#ED563A;
+}
+.header-nav .btn:hover{
+    color:#fff;
+}
+.brand-trainingstudio {
+    font-size: 36px;
+    font-weight: 900;
+    color:#fff;
+    text-transform: uppercase;
+}
+.header-nav li {
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* Hero Section */
+.hero video {
+    width: 100%;
+}
+.hero-cover {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: linear-gradient(rgba(32, 43, 51, 0.7), rgba(32, 43, 51, 0.7)); 
+    text-align: center;
+    padding: 398px 0;
+}
+
+/* Program Section */
+.section-header {
+    text-align: center;
+}
+.program .article {
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+.program-article-link {
+    text-transform: uppercase;
+}
+.program-article-body {
+    margin: 10px 0;
+}
+.program-article-link:hover {
+    text-decoration: underline;
+}
+/* Banner Section */
+.banner {
+    background: url("../media/cta-bg.jpg");
+    text-align: center;
+    background-size: cover;
+}
+
+.banner-text {
+    width: 75%;    
+    color: #fff;
+    margin: 20px auto;
+}
+
+/* Classes Section */
+.classes-nav {
+    width: 100%;
+    padding: 26px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px #c0bebe;
+    margin-bottom: 40px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    color: #232D38;
+}
+.classes-info {
+    align-items: flex-start;
+}
+.training-nav {
+    margin-left: 20px;
+}
+.article-classes-image {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.classes-text {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+/* Schedule Section */
+.schedule {
+    background: url("../media/schedule-bg.jpg");
+    color: #fff;
+}
+.schedule .heading-section, .schedule a {
+    color: #fff;
+}
+.weekday .orange {
+    color:#ED563A;
+}
+.schedule-table {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 36px;
+}
+.schedule-table td {
+    border: 1px solid #fff;
+    padding: 40px;   
+    text-align: center;
+}
+.weekday a:hover {
+    color: #ED563A;
+}
+
+/* Trainers Section */
+
+.col-1-3 {
+    width: 31.5%;
+    box-shadow: 1px 1px 10px 1px #cac6c6;
+    padding: 42px;
+}
+.col-1-3 img {
+    width: 100%;
+}
+.trainer-type {
+    color: #ED563A;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 20px 0 10px 0;
+}
+.trainer-text {
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 2;
+}
+.social i {
+    color: #232d38;
+    margin-right: 8px;
+    font-size: 16px;
+}
+.social i:hover {
+    color: #ED563A;
+}
+/* Contact Section */
+.contact {
+    position: relative;
+}
+form {
+    position: absolute;
+    padding: 40px;
+    border-radius: 10px;
+    width: 40%;
+    top: 10%;
+    right: 5%;
+    background-color: #fff;
+}
+.form-control {
+    border: 1px solid #ddd;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #818181;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.form-control:focus {
+    border: 1px solid #ED563A;    
+}
+form button {
+    border: none;
+}
+form textarea {
+    font-family: 'Poppins', sans-serif;
+    color: #818181;
+    font-size: 12px; 
+}
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 38px;
+    font-size: 12px;
+    color: #6D737A;    
+}
